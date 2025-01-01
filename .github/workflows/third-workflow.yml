@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Get system information
         run: |
-          - echo "You are login on `hostname -f`"
+          - echo "You are login on `uname -n`"
           - echo "Current date and time is `date` "
           - echo "You are working as `whoami` user"
