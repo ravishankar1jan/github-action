@@ -2,7 +2,7 @@ name: Sequential Job execution
 on: push
 jobs:
   test:
-    runs-on: ubuntu-24.04 # ubuntu-latest
+    runs-on: ubuntu-24.04 
     steps:
       - name: Print greeting message
         run: echo "Hello World, welcome to year 2025.."
@@ -15,5 +15,6 @@ jobs:
       - name: Get system information
         run: |
           echo "Jobs are running on `hostname -f` "
+          echo "Current kernel version is `uname -r` "
           echo "Current date and time is `date` "
           echo "You are working as `whoami` user"
