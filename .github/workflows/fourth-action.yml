@@ -1,4 +1,4 @@
-name: Parallel Job Workflow
+name: Sequential Job execution
 on: push
 jobs:
   test:
