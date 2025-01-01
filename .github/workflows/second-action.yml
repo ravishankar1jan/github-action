@@ -1,0 +1,15 @@
+name: Second Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Print greeting message
+        run: | 
+          echo "Hello World, Welcome to year `date +%Y`."
+          echo "Pipeline is running as `whoami` ."
+      - name: Print Current Timestamp
+        run: echo "Current time is `date`
+      - name: Pass
+        run: echo "All jobs completed successfully
+        
