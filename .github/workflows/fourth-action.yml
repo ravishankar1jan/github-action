@@ -1,0 +1,19 @@
+name: Parallel Job Workflow
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-24.04 # ubuntu-latest
+    steps:
+      - name: Print greeting message
+        run: echo "Hello World, welcome to year 2025.."
+      - name: Print Signing off
+        run: echo "Done"
+  dev:
+    runs-on: ubuntu-24.04
+    needs: test
+    steps:
+      - name: Get system information
+        run: |
+          echo "Jobs are running on `hostname -f` "
+          echo "Current date and time is `date` "
+          echo "You are working as `whoami` user"
