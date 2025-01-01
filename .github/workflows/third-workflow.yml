@@ -13,5 +13,6 @@ jobs:
     steps:
       - name: Get system information
         run: |
-          - echo "Current date and time is `date` "
-          - echo "You are working as `whoami` user"
+          echo "Jobs are running on `hostname -f` "
+          echo "Current date and time is `date` "
+          echo "You are working as `whoami` user"
