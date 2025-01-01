@@ -9,8 +9,8 @@ jobs:
       - name: Print Signing off
         run: echo "Done"
   dev:
-    runs-on: ubuntu-24.04
     needs: test
+    runs-on: ubuntu-24.04
     steps:
       - name: Get system information
         run: |
