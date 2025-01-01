@@ -7,9 +7,9 @@ jobs:
       - name: Print greeting message
         run: | 
           echo "Hello World, Welcome to year `date +%Y`."
-          echo "Pipeline is running as `whoami` ."
+          echo "Pipeline is running as `whoami` user."
       - name: Print Current Timestamp
-        run: echo "Current time is `date`
+        run: echo "Current time is `date` "
       - name: Pass
         run: echo "All jobs completed successfully
         
