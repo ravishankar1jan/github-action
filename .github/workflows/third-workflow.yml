@@ -1,5 +1,5 @@
 name: Multi Job Parallel
-on: push
+on: [ push, workflow_dispatch ]
 jobs:
   test:
     runs-on: ubuntu-24.04 # ubuntu-latest
