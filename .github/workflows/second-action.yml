@@ -11,5 +11,5 @@ jobs:
       - name: Print Current Timestamp
         run: echo "Current time is `date` "
       - name: Pass
-        run: echo "All jobs completed successfully
+        run: echo "All jobs completed successfully"
         
