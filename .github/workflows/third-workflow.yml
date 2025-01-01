@@ -1,4 +1,4 @@
-name: Multi Job Workflow
+name: Multi Job Parallel
 on: push
 jobs:
   test:
